@@ -357,6 +357,8 @@ Using the option [dynamic_domains](https://github.com/mholt/caddy-dynamicdns#dyn
 
 To make use of the CrowdSec Bouncer module, set the global [crowdsec](https://caddyserver.com/docs/modules/crowdsec) directive in your `Caddyfile`, and include it in every site you want to protect. For advanced usage, refer to the [hslatman/caddy-crowdsec-bouncer](https://github.com/hslatman/caddy-crowdsec-bouncer) repository.
 
+CrowdSec builds in this repository include both the HTTP bouncer and AppSec components. AppSec is opt-in and only becomes active when explicitly configured.
+
 ```Caddyfile
 {
   debug  # makes Caddy logs more detailed (optional)
