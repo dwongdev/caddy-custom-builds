@@ -11,6 +11,11 @@ on:
     paths:
       - caddy-porkbun/Dockerfile
 
+# Prevent overlapping runs for the same workflow and ref
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 # Environment variables available to all jobs and steps in this workflow
 env:
   DOCKER_BUILDKIT: 1
