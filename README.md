@@ -62,7 +62,7 @@ If you are looking for a specific custom build not available yet in this reposit
 
 - [**Cloudflare DNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for Cloudflare DNS-01 ACME validation support | [caddy-dns/cloudflare](https://github.com/caddy-dns/cloudflare)
 - [**Cloudflare IPs**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#cloudflare-ips): to retrieve Cloudflare's current [IP ranges](https://www.cloudflare.com/ips/) | [WeidiDeng/caddy-cloudflare-ip](https://github.com/WeidiDeng/caddy-cloudflare-ip)
-- [**ClouDNS DNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for ClouDNS DNS-01 ACME validation support | [anxuanzi/caddy-dns-cloudns](https://github.com/anxuanzi/caddy-dns-cloudns)
+- [**ClouDNS DNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for ClouDNS DNS-01 ACME validation support | [caddy-dns/cloudns](https://github.com/caddy-dns/cloudns)
 - [**deSEC DNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for deSEC DNS-01 ACME validation support | [caddy-dns/desec](https://github.com/caddy-dns/desec)
 - [**DNSExit DNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for DNSExit DNS-01 ACME validation support | [caddy-dns/dnsexit](https://github.com/caddy-dns/dnsexit)
 - [**DuckDNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for DuckDNS DNS-01 ACME validation support | [caddy-dns/duckdns](https://github.com/caddy-dns/duckdns)

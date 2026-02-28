@@ -8,7 +8,7 @@
 [![GitHub build status](https://img.shields.io/github/actions/workflow/status/serfriz/caddy-custom-builds/build.caddy-cloudns.yml?label=Build)](https://github.com/serfriz/caddy-custom-builds/actions/workflows/build.caddy-cloudns.yml)
 
 This image is updated automatically by GitHub Actions when a new version of [Caddy](https://github.com/caddyserver/caddy) is released using the official [Caddy Docker](https://hub.docker.com/_/caddy) image and the following module:
-- [**ClouDNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for ClouDNS DNS-01 ACME validation support | [anxuanzi/caddy-dns-cloudns](https://github.com/anxuanzi/caddy-dns-cloudns)
+- [**ClouDNS**](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#dns-modules): for ClouDNS DNS-01 ACME validation support | [caddy-dns/cloudns](https://github.com/caddy-dns/cloudns)
 
 ## Usage
 
