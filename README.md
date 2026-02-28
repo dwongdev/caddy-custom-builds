@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/github/license/serfriz/caddy-custom-builds?label=License)](https://github.com/serfriz/caddy-custom-builds/blob/main/LICENSE)
 
 > [!IMPORTANT]
-> **Some automatic builds for Caddy 2.11.1 are currently failing due to Docker Hub pull rate limits**. Considering all supported platforms, each Caddy build requires multiple pulls (about six), so limits can be reached during full update runs. The limit resets after some time, and **builds will be triggered again during the weekend**.
+> **Some automatic builds for Caddy 2.11.1 are currently failing due to Docker Hub pull rate limits**. Considering all supported platforms, each Caddy build requires multiple pulls (about six), so limits can be reached during full update runs. The limit resets after some time, and **builds will be triggered again during the weekend**. I will also look into options to avoid similar automatic build errors in the future.
 >
-> **Thank you for your understanding**. I will also look into options to avoid similar automatic build errors in the future.
+> **Thank you for your understanding!** 
 
 [Caddy](https://github.com/caddyserver/caddy) takes a [modular approach](https://caddyserver.com/docs/extending-caddy) to building Docker images, allowing users to include only the [modules](https://caddyserver.com/docs/modules/) they need. This repository aims to provide flexibility and convenience to run Caddy with specific combinations of modules by providing pre-built images according to the needs and preferences of the users.
 
