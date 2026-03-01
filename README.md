@@ -3,11 +3,10 @@
 [![GitHub build status](https://img.shields.io/github/actions/workflow/status/serfriz/caddy-custom-builds/update-tag-release.yml?label=Auto-update)](https://github.com/serfriz/caddy-custom-builds/actions/workflows/update-tag-release.yml)
 [![License](https://img.shields.io/github/license/serfriz/caddy-custom-builds?label=License)](https://github.com/serfriz/caddy-custom-builds/blob/main/LICENSE)
 
-> [!IMPORTANT]
-> **Some automatic builds for Caddy 2.11.1 are currently failing due to Docker Hub pull rate limits**. Considering all supported platforms, each Caddy build requires multiple pulls (about six), so limits can be reached during full update runs. The limit resets after some time, and **builds will be triggered again during the weekend**. I will also look into options to avoid similar automatic build errors in the future.
+> [!NOTE]
+> Some automatic builds may occasionally fail due to Docker Hub pull rate limits. Considering all supported platforms, each Caddy build requires multiple pulls (about six), so limits can be reached during large update runs.
+> I am aware of this and will look into options to avoid similar automatic build errors in the future. In the meantime, I recommend using GitHub Packages with either a version tag or the `latest` tag (for example, `ghcr.io/serfriz/<caddy-build-name>:latest`) instead of Docker Hub.
 >
-> **Thank you for your understanding!** 
-
 [Caddy](https://github.com/caddyserver/caddy) takes a [modular approach](https://caddyserver.com/docs/extending-caddy) to building Docker images, allowing users to include only the [modules](https://caddyserver.com/docs/modules/) they need. This repository aims to provide flexibility and convenience to run Caddy with specific combinations of modules by providing pre-built images according to the needs and preferences of the users.
 
 All custom images are updated automatically when a [new version](https://github.com/caddyserver/caddy/releases) of Caddy is released using the official [Caddy Docker](https://hub.docker.com/_/caddy) image. This is done by using GitHub Actions to build and push the images for all Caddy supported platforms to Docker Hub, GitHub Packages and Quay container registries. In addition, since the update cycle of many modules is faster than Caddy's, all custom images are periodically re-built with the latest version of their respective modules on the first day of every month; see the [Tags](https://github.com/serfriz/caddy-custom-builds?tab=readme-ov-file#tags) section below for tag policy details. Those who are already running Caddy's latest version can force the update by re-creating the container (i.e. running `docker compose up --force-recreate` if using Docker Compose).
@@ -100,7 +99,7 @@ Docker builds for all Caddy supported platforms are available at the following c
 - **GitHub Packages** > `docker pull ghcr.io/serfriz/<caddy-build-name>:latest`
 - **Quay** > `docker pull quay.io/serfriz/<caddy-build-name>:latest`
 
-To pull a specific build, replace `<caddy-build-name>` with the desired one. For example, to pull the `caddy-cloudflare` build from Docker Hub, use `docker pull serfriz/caddy-cloudflare:latest`.
+To pull a specific build, replace `<caddy-build-name>` with the desired one. For example, to pull the `caddy-cloudflare` build from GitHub Packages, use `docker pull ghcr.io/serfriz/caddy-cloudflare:latest`.
 
 ### Tags
 
